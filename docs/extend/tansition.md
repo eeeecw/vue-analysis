@@ -345,7 +345,7 @@ export function extractTransitionData (comp: Component): Object {
 
 ## transition module
 
-刚刚我们介绍完 `<transition>` 组件的实现，它的 `render` 阶段只获取了一些数据，并且返回了渲染的 `vnode`，并没有任何和动画相关，而动画相关的逻辑全部在 `src/platforms/web/modules/transition.js` 中：
+刚刚我们介绍完 `<transition>` 组件的实现，它的 `render` 阶段只获取了一些数据，并且返回了渲染的 `vnode`，并没有任何和动画相关，而动画相关的逻辑全部在 `src/platforms/web/runtime/modules/transition.js` 中：
 
 ```js
 function _enter (_: any, vnode: VNodeWithData) {
